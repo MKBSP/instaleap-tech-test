@@ -3,37 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
-    />
-    <title>A TinyBase App</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Instaleap Tech Challenge</title>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #111;
+        color: #fff;
+        text-align: center;
+        margin: 2rem;
+      }
+      .alert {
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        font-weight: bold;
+        color: white;
+      }
+      .alert-success {
+        background-color: #28a745; /* Green for success */
+      }
+      .alert-danger {
+        background-color: #dc3545; /* Red for danger */
+      }
+      button {
+        padding: 10px;
+        margin: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #555;
+      }
+    </style>
   </head>
   <body>
-    <div id="app">
-      <header>
-        <h1>
-          <img src="/favicon.svg" />
-          TinyBase
-        </h1>
-      </header>
-      <div id="buttons">
-        <button id="countButton">Increment number</button>
-        <button id="randomButton">Random number</button>
-        <button id="addPetButton">Add a pet</button>
-      </div>
-      <details open>
-        <summary>Values</summary>
-        <pre id="valuesJson"></pre>
-      </details>
-      <details open>
-        <summary>Tables</summary>
-        <pre id="tablesJson"></pre>
-      </details>
-    </div>
+    <h1>Instaleap Tech Challenge</h1>
+
+    <!-- Section for letter cycling -->
+    <h3>My name is MADS PETERSEN - Let's loop through an array</h3>
+    <p id="demo">A</p>
+    <button id="previousLetter">Back</button>
+    <button id="nextLetter">Forward</button>
+
+    <!-- Section for showing the current time and seconds -->
+    <h3>Get seconds from date and time</h3>
+    <p id="time"></p>
+    <p id="result"></p>
+    <button id="showTime">Show time</button>
+
+    <!-- Vite will load the script -->
     <script type="module" src="/src/index.js"></script>
   </body>
 </html>
